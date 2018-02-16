@@ -1,0 +1,19 @@
+--------------
+
+  TP 1
+
+Exercice 1 :
+Ecrire un programme qui demande la saisie d’une phrase et affiche sa taille totale, le nombre de voyelles et consonnes et le nombre de mots.
+
+Exercice 2 :
+Ecrire un programme qui remplace dans la liste suivante [1,43,8,-23,12,-67,42,-8,21,-12,-42,-61,8,17,42] les chiffres négatifs par leur valeur absolue, extrait les doublons et remet la liste dans l’ordre croissant.
+
+Exercice 3 :
+Ecrire un programme qui affiche le dictionnaire suivant {‘r’:3,’a’:0,’y’:5,’z’:1,’t’:4,’e’:2} trié par clé ( de a à z) et trié par valeur (de 0 à 5)
+
+Exercice 4:
+Ecrire un programme qui affiche un menu en boucle permettant d’ajouter un nouveau contact, de voir tous les contacts et quitter. L’ajout demande la saisie d’un nom, d’un prénom, d’un numéro de téléphone, d’un email et stocke le résultat dans une liste.
+
+--------------
+
+  TP 2
