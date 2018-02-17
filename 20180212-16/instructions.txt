@@ -17,3 +17,32 @@ Ecrire un programme qui affiche un menu en boucle permettant d’ajouter un nouv
 --------------
 
   TP 2
+
+Il s'agit de réaliser un logiciel permettant la gestion des correctifs de sécurité sur un système.
+
+Synopsys:
+./checksysvce -u <--updatedatabase> [-f database_filepath]
+              -c <--checkvuln> [-f binary_filepath]
+              -l <--listvuln> [-f bianry_filepath]
+
+Le programme devra vérifier l'ensemble des fichiers binaires exécutables du système et identifier les failles connues. Il réalisera bien sur ce travail avec l'ensemble des librairies du système.
+Le programme supportera tous les fichiers a.out, ELF, PE, COFF, etc...
+
+Une base de données permettra de na pas parcourir le disque dur à chaque exécution.
+L'option "updatedatabase" permet la mise à jour de cette base de données.
+L'option par défaut est "checkvuln" qui parcours l'ensemble de la base de données, identifie les versions et vérifie auprès des CVE les vulnérabilités des binaires exécutables présent sur le système.
+
+La base de données retiendra l'ensemble des CVE déjà remontés pour chaque binaire exécutable et permettra de consulter l'historique avec la commande "listvuln"
+
+La base de données contiendra bien sûr les "hashes" de tous les binaires exécutables qui seront vérifiés afin de contrôler l'intégrité du système.
+
+Le programme devra fonctionner sur Windows, GNU/Linux, *BSD et MacOS X, une conception modulaire sera donc indispensable.
+
+Le code sera évidemment commenté en anglais.
+
+
+Bonus (dans l'ordre ou RIEN):
+1/ Si un programme est compilé en statique, vérifier les librairies avec lesquelles le programme est statiquement lié.
+2/ Utiliser une base de données PostgreSQL.
+3/ Permettre le lancement sur un réseau complet.
+4/ Support d'autres architectures (ARM, Sparc...).
